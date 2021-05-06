@@ -1,0 +1,30 @@
+/*Working css*/
+
+/*#barcode-scanner > video {*/
+/*    width: 100vh !important;*/
+/*    position: fixed;*/
+/*    top:0;*/
+/*    left :0;*/
+/*    z-index: 99;*/
+/*}*/
+
+div[name="container1"] > video {
+    width: 100vw !important;
+    position: fixed;
+    top:0;
+    left :0;
+    right:0;
+    bottom: 0;
+    margin:auto;
+    z-index: 99;
+}
+
+
+#cancel {
+    position: fixed;
+    left : 0;
+    right : 0;
+    text-align: center;
+    bottom: 3%;
+    z-index: 9999;
+}

@@ -1,0 +1,82 @@
+{
+  "displayName" : "Barcode Scanner",
+  "group" : "",
+  "iconUrl" : "/resources/images/imagelists/prefab-icon.png",
+  "resources" : {
+    "styles" : [ "/pages/Main/Main.css" ],
+    "scripts" : [ "/zingjs-br.min.js" ]
+  },
+  "properties" : {
+    "startbuttoncaption" : {
+      "type" : "string",
+      "displayName" : "Start Button Caption",
+      "description" : "-",
+      "bindable" : "in-bound",
+      "value" : "Scanner",
+      "widget" : "string",
+      "show" : true,
+      "disabled" : false
+    },
+    "startbuttonicon" : {
+      "type" : "string",
+      "displayName" : "Start Button Icon",
+      "description" : "--",
+      "bindable" : "in-bound",
+      "widget" : "string",
+      "show" : true,
+      "disabled" : false
+    },
+    "cancelbuttoncaption" : {
+      "type" : "string",
+      "displayName" : "Cancel Button Caption",
+      "description" : "--",
+      "bindable" : "in-bound",
+      "value" : "Cancel",
+      "widget" : "string",
+      "show" : true,
+      "disabled" : false
+    },
+    "cancelbuttonicon" : {
+      "type" : "string",
+      "displayName" : "Cancel Button Icon",
+      "description" : "--",
+      "bindable" : "in-bound",
+      "widget" : "string",
+      "show" : true,
+      "disabled" : false
+    },
+    "datavalue" : {
+      "type" : "string",
+      "displayName" : "Datavalue",
+      "description" : "--",
+      "bindable" : "out-bound",
+      "widget" : "string",
+      "show" : false,
+      "disabled" : true
+    }
+  },
+  "events" : {
+    "onSuccess" : {
+      "description" : "Callback action when barcode is detected",
+      "eventData" : ""
+    },
+    "onBeforescan" : {
+      "description" : "--",
+      "eventData" : ""
+    }
+  },
+  "methods" : {
+    "start" : {
+      "description" : "Call this method to initialize the scanner",
+      "parameters" : [ ],
+      "returnType" : "void",
+      "example" : ""
+    },
+    "stop" : {
+      "description" : "Call this method to stop the scanner",
+      "parameters" : [ ],
+      "returnType" : "void",
+      "example" : ""
+    }
+  }
+}

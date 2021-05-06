@@ -1,0 +1,12 @@
+<wm-prefab-container name="prefab_container1">
+    <wm-button class="btn-default" caption="bind:startbuttoncaption" type="button" margin="unset 0.5em" name="Scannerbtn" on-click="ScannerbtnClick($event, widget)" iconclass=""></wm-button>
+    <div id="barcode-scanner">
+
+    </div>
+    <wm-container name="container1">
+
+        <div id="cancel">
+            <wm-button class="btn-default" caption="bind:cancelbuttoncaption" type="button" margin="unset 0.5em" name="stop" show="false" deferload="false" on-click="stopClick($event, widget)"></wm-button>
+        </div>
+    </wm-container>
+</wm-prefab-container>
